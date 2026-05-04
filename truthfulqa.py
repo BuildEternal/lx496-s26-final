@@ -1,8 +1,8 @@
 """
-Code for HW 3. The code in this file can be used as either a script or a
-module. You will implement the MultipleChoicePipeline class in Problem
-2. In Problem 3, you will test LLMs on TruthfulQA by running this file
-as a script on HPC.
+Code for the final exam. The code in this file can be used as either a
+script or a module. You will implement the MultipleChoicePipeline class
+in Problem 2. In Problem 3, you will test LLMs on TruthfulQA by running
+this file as a script on SCC.
 """
 import argparse
 import csv
