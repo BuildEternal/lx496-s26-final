@@ -308,8 +308,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Load TruthfulQA
-    split = "validation[:10]" if args.debug else "validation"
-    truthfulqa = load_dataset("EleutherAI/truthful_qa_mc", split=split)
+    split = "train[:10]" if args.debug else "train"
+    truthfulqa = load_dataset("parquet", data_files="data/truthfulqa.parquet",
+                              split="train[:10]")
 
     # Load pipeline and prompts
     lm = MultipleChoicePipeline(model=args.model)
