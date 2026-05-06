@@ -330,7 +330,7 @@ if __name__ == "__main__":
 
     # Load TruthfulQA
     split = "train[:10]" if args.debug else "train"
-    truthfulqa = load_dataset("parquet", data_files="data/truthfulqa.parquet", split="train[:10]")
+    truthfulqa = load_dataset("parquet", data_files="data/truthfulqa.parquet", split=split)
 
     # Load pipeline and prompts
     lm = MultipleChoicePipeline(model=args.model)
